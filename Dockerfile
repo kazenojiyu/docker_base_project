@@ -5,7 +5,7 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 
 RUN apt-get update && apt-get install -y wget curl git libcurl4-gnutls-dev zlib1g-dev libicu-dev g++ libxml2-dev libpq-dev zip libzip-dev unzip \
  libfreetype6-dev libjpeg62-turbo-dev libmcrypt-dev libpng-dev libxpm-dev libjpeg-dev libwebp-dev gnupg2 poppler-utils \
- libmagickwand-dev imagemagick ghostscript \
+ libmagickwand-dev imagemagick ghostscript openssh-client \
  --no-install-recommends
 RUN apt-get autoremove && apt-get autoclean \
  && rm -rf /var/lib/apt/lists/*
